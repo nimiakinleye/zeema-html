@@ -1,11 +1,13 @@
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 15px;
 }
 
-p, h1, h3 {
+p,
+h1,
+h3 {
   padding: 0;
   margin: 0;
 }
@@ -22,7 +24,7 @@ input {
 
 a {
   text-decoration: none;
-  color: #00803D;
+  color: #00803d;
   font-weight: 600;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -39,7 +41,8 @@ a svg {
 button {
   outline: none;
   border: none;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
 }
 
 .button {
@@ -62,7 +65,7 @@ button {
 }
 
 header a {
-  color: #3E3E3E;
+  color: #3e3e3e;
   font-weight: normal;
   display: inline;
 }
@@ -88,18 +91,22 @@ header .navlinks {
   display: flex;
   -webkit-column-gap: 1.5rem;
           column-gap: 1.5rem;
-  border-left: 2px solid #3E3E3E;
+  border-left: 2px solid #3e3e3e;
   padding: 4px 0px;
   padding-left: 1.5rem;
 }
 
+header .navlinks a:active {
+  font-weight: 600;
+}
+
 header .button {
-  border-color: #00803D;
+  border-color: #00803d;
   margin-left: 1.5rem;
 }
 
 header .button:hover {
-  background: #00803D;
+  background: #00803d;
   color: #fff;
 }
 
@@ -113,7 +120,7 @@ header .button:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #00803D;
+  background: #00803d;
   padding: 0 15px;
   padding-top: 3rem;
   color: #fff;
@@ -146,7 +153,7 @@ header .button:hover {
       -ms-flex-align: center;
           align-items: center;
   background-color: #fff;
-  color: #00803D;
+  color: #00803d;
   padding: 8px;
   margin: 10px 0;
   cursor: pointer;
@@ -177,13 +184,13 @@ header .button:hover {
 #info .heading .bar {
   width: 20px;
   height: 35px;
-  background-color: #3E3E3E;
+  background-color: #3e3e3e;
   -webkit-filter: opacity(0.05);
           filter: opacity(0.05);
 }
 
 #info .heading h3 {
-  color: #00803D;
+  color: #00803d;
   margin-left: -5px;
   padding-top: 10px;
   font-size: 1.5rem;
@@ -245,7 +252,7 @@ header .button:hover {
   -ms-grid-column-span: 3;
   grid-column: 1/4;
   min-height: 148px;
-  border-right: 2px solid #C4C4C4;
+  border-right: 2px solid #c4c4c4;
 }
 
 #info .mission-vision p {
@@ -262,7 +269,7 @@ header .button:hover {
 #info #vision .heading {
   direction: ltr;
   padding: 0 24px;
-  border-left: 2px solid #C4C4C4;
+  border-left: 2px solid #c4c4c4;
   border-right: none;
   margin-left: auto;
 }
@@ -280,7 +287,7 @@ header .button:hover {
 }
 
 #rates .rates {
-  background: #00803D;
+  background: #00803d;
   padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -348,6 +355,15 @@ header .button:hover {
   height: 100vh;
 }
 
+#benefits #benefits_cont .title h3 {
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+#benefits #benefits_cont .title p {
+  font-weight: 200;
+}
+
 #benefits #benefits_cont .benefits {
   display: -ms-grid;
   display: grid;
@@ -361,6 +377,15 @@ header .button:hover {
 #benefits #benefits_cont .benefits .benefit {
   position: relative;
   margin: 10px auto;
+}
+
+#benefits #benefits_cont .benefits .benefit h3 {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+#benefits #benefits_cont .benefits .benefit p {
+  font-weight: 200;
 }
 
 #benefits #benefits_cont .benefits .benefit .benefit_path {
@@ -381,7 +406,11 @@ header .button:hover {
 }
 
 #benefits #benefits_cont .benefits .benefit:hover {
-  color: #00803D;
+  color: #00803d;
+}
+
+#benefits #benefits_cont .benefits .benefit:hover p {
+  font-weight: 300;
 }
 
 #benefits #benefits_cont .benefits .benefit:hover .benefit_path {
@@ -394,7 +423,7 @@ header .button:hover {
 }
 
 #subscribe {
-  background: #00803D;
+  background: #00803d;
   color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -413,10 +442,15 @@ header .button:hover {
   border-bottom-right-radius: 20px;
 }
 
+#subscribe h3 {
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+
 #subscribe p {
   font-size: 0.8rem;
   max-width: 32rem;
-  font-weight: 300;
+  font-weight: 200;
   opacity: 0.8;
 }
 
@@ -427,6 +461,7 @@ header .button:hover {
   max-width: 36rem;
   padding: 0 10px;
   border-radius: 5px;
+  font-family: "Poppins", sans-serif;
 }
 
 #subscribe button {
@@ -438,7 +473,33 @@ header .button:hover {
 
 #subscribe button:hover {
   background-color: #fff;
-  color: #00803D;
+  color: #00803d;
+}
+
+#footer .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 40px 0;
+  border-bottom: 2px solid #3e3e3e;
+  margin: 10px auto;
+}
+
+#footer .footer img {
+  width: 10rem;
+}
+
+#footer .footer .sub_footer h3 {
+  font-weight: 600;
+}
+
+#footer .footer .sub_footer a {
+  font-weight: 300;
+  color: #3e3e3e;
+  margin: 10px auto;
 }
 
 @media only screen and (max-width: 1020px) {

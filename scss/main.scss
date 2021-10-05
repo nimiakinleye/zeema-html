@@ -1,5 +1,5 @@
-$primary_color: #00803D;
-$secondary_color: #3E3E3E;
+$primary_color: #00803d;
+$secondary_color: #3e3e3e;
 $nav_spacing: 1.5rem;
 $nav_spacing_mobile: 0.5rem;
 $border_rad: 20px;
@@ -8,11 +8,13 @@ $comp_margin: 100px;
 
 body {
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 15px;
 }
 
-p, h1, h3 {
+p,
+h1,
+h3 {
   padding: 0;
   margin: 0;
 }
@@ -42,12 +44,13 @@ a {
 button {
   outline: none;
   border: none;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
 }
 
 .button {
   padding: 6px 12px;
-  border: 2px solid; 
+  border: 2px solid;
   border-radius: 100px;
 }
 
@@ -59,7 +62,6 @@ button {
 }
 
 header {
-
   a {
     color: $secondary_color;
     font-weight: normal;
@@ -82,12 +84,18 @@ header {
     border-left: 2px solid $secondary_color;
     padding: 4px 0px;
     padding-left: $nav_spacing;
+
+    a {
+      &:active {
+        font-weight: 600;
+      }
+    }
   }
 
   .button {
     border-color: $primary_color;
     margin-left: $nav_spacing;
-    
+
     &:hover {
       background: $primary_color;
       color: #fff;
@@ -130,7 +138,7 @@ header {
     color: $primary_color;
     padding: 8px;
     margin: $sub_margin 0;
-    cursor:  pointer;
+    cursor: pointer;
 
     p {
       margin-right: 8px;
@@ -153,7 +161,7 @@ header {
     .bar {
       width: 20px;
       height: 35px;
-      background-color: #3E3E3E;
+      background-color: #3e3e3e;
       filter: opacity(0.05);
     }
 
@@ -170,7 +178,7 @@ header {
     grid-template-columns: repeat(12, 1fr);
     gap: 20px;
     align-items: center;
-  
+
     .about_text {
       grid-column: 1/8;
       max-width: 36rem;
@@ -184,11 +192,11 @@ header {
         padding: 0 18px;
       }
     }
-  
+
     .about_img {
       grid-column: 8/13;
       margin-left: auto;
-  
+
       img {
         width: 16rem;
       }
@@ -207,7 +215,7 @@ header {
       // grid-row: 1;
       min-height: 148px;
       // padding-right: 24px;
-      border-right: 2px solid #C4C4C4;
+      border-right: 2px solid #c4c4c4;
 
       // h3 {
       //   min-height: 76px;
@@ -229,11 +237,10 @@ header {
     .heading {
       direction: ltr;
       padding: 0 24px;
-      border-left: 2px solid #C4C4C4;
+      border-left: 2px solid #c4c4c4;
       border-right: none;
       margin-left: auto;
     }
-
   }
 }
 
@@ -273,19 +280,17 @@ header {
         font-size: 0.8rem;
       }
     }
-
   }
 
   .more {
     grid-column: 10/13;
     justify-self: center;
   }
-  
 }
 
 #benefits {
   min-height: 100vh;
-  background-image: url('../assets/benefits_bg.png');
+  background-image: url("../assets/benefits_bg.png");
   background-size: cover;
   margin: $comp_margin auto;
   padding: 30px;
@@ -297,7 +302,18 @@ header {
     backdrop-filter: blur(5px) grayscale(1);
     border-radius: 20px;
     height: 100vh;
-    
+
+    .title {
+      h3 {
+        font-size: 2.2rem;
+        font-weight: 600;
+      }
+
+      p {
+        font-weight: 200;
+      }
+    }
+
     .benefits {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -307,7 +323,15 @@ header {
       .benefit {
         position: relative;
         margin: $sub_margin auto;
-        // border-radius: 20px;
+
+        h3 {
+          font-weight: 500;
+          font-size: 1.5rem;
+        }
+
+        p {
+          font-weight: 200;
+        }
 
         .benefit_path {
           position: absolute;
@@ -327,10 +351,13 @@ header {
         &:hover {
           color: $primary_color;
 
+          p {
+            font-weight: 300;
+          }
+
           .benefit_path {
             clip-path: circle(200% at 0% 0%);
           }
-          
         }
 
         h3 {
@@ -353,10 +380,15 @@ header {
   border-bottom-left-radius: $border_rad;
   border-bottom-right-radius: $border_rad;
 
+  h3 {
+    font-weight: 400;
+    font-size: 1.8rem;
+  }
+
   p {
     font-size: 0.8rem;
     max-width: 32rem;
-    font-weight: 300;
+    font-weight: 200;
     opacity: 0.8;
   }
 
@@ -367,6 +399,7 @@ header {
     max-width: 36rem;
     padding: 0 10px;
     border-radius: 5px;
+    font-family: "Poppins", sans-serif;
   }
 
   button {
@@ -382,17 +415,38 @@ header {
   }
 }
 
+#footer {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+    border-bottom: 2px solid $secondary_color;
+    margin: $sub_margin auto;
 
+    img {
+      width: 10rem;
+    }
 
+    .sub_footer {
+      h3 {
+        font-weight: 600;
+      }
 
+      a {
+        font-weight: 300;
+        color: $secondary_color;
+        margin: $sub_margin auto;
+      }
+    }
+  }
+}
 
 // Responsive Code
-@media only screen and (max-width:1020px) {
+@media only screen and (max-width: 1020px) {
   .container {
     width: 90%;
   }
   header {
-
     .navlinks {
       column-gap: $nav_spacing_mobile;
       padding-left: $nav_spacing_mobile;
