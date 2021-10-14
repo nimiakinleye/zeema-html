@@ -429,7 +429,6 @@ header {
 // md-screen
 @media only screen and (min-width: 768px) {
   .container {
-    // width: 80%;
     margin: 0 auto;
   }
 
@@ -505,21 +504,12 @@ header {
 
       .heading {
         grid-column: 1/4;
-        // grid-row: 1;
         min-height: 148px;
-        // padding-right: 24px;
         border-right: 2px solid #c4c4c4;
-
-        // h3 {
-        //   min-height: 76px;
-        //   padding-right: 24px;
-        //   border-right: 2px solid #C4C4C4;
-        // }
       }
 
       p {
         grid-column: 4/13;
-        // grid-row: 1;
         padding: 0 24px;
       }
     }
@@ -550,7 +540,7 @@ header {
       
       .rate {
         display: flex;
-        justify-self: start;
+        align-items: center;
       }
     }
 
