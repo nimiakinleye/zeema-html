@@ -151,7 +151,6 @@ header {
     background-color: #fff;
     color: $primary_color;
     padding: 8px;
-    margin: $sub_margin 0;
     cursor: pointer;
 
     p {
@@ -161,6 +160,7 @@ header {
 
   .tagline {
     font-size: 12px;
+    margin: $sub_margin 0;
   }
 }
 
@@ -253,6 +253,7 @@ header {
       h3 {
         font-weight: 500;
         font-size: 0.8rem;
+        margin-top: $sub_margin;
       }
     }
   }
@@ -544,6 +545,7 @@ header {
     padding: 30px;
 
     .rates {
+      display: flex;
       grid-column: 1/10;
       width: auto;
     }

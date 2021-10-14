@@ -169,7 +169,6 @@ header .button:hover {
   background-color: #fff;
   color: #00803d;
   padding: 8px;
-  margin: 10px 0;
   cursor: pointer;
 }
 
@@ -179,6 +178,7 @@ header .button:hover {
 
 #banner .tagline {
   font-size: 12px;
+  margin: 10px 0;
 }
 
 #info {
@@ -295,6 +295,7 @@ header .button:hover {
 #rates .rates .rate h3 {
   font-weight: 500;
   font-size: 0.8rem;
+  margin-top: 10px;
 }
 
 #rates .more {
@@ -605,6 +606,9 @@ header .button:hover {
     padding: 30px;
   }
   #rates .rates {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -ms-grid-column: 1;
     -ms-grid-column-span: 9;
     grid-column: 1/10;
