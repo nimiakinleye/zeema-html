@@ -390,7 +390,8 @@ header {
 }
 
 #footer {
-  padding: 0 15px;
+  padding: 15px;
+  margin: $sub_margin auto;
   
   .footer {
     display: flex;
@@ -425,7 +426,7 @@ header {
 // md-screen
 @media only screen and (min-width: 768px) {
   .container {
-    width: 80%;
+    // width: 80%;
     margin: 0 auto;
   }
 
@@ -594,6 +595,12 @@ header {
 
 // lg-screen
 @media only screen and (min-width: 1024px) {
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+
   header {
     #lg_header {
       display: flex;

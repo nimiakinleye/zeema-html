@@ -444,7 +444,8 @@ header .button:hover {
 }
 
 #footer {
-  padding: 0 15px;
+  padding: 15px;
+  margin: 10px auto;
 }
 
 #footer .footer {
@@ -483,7 +484,6 @@ header .button:hover {
 
 @media only screen and (min-width: 768px) {
   .container {
-    width: 80%;
     margin: 0 auto;
   }
   #banner {
@@ -655,6 +655,11 @@ header .button:hover {
 }
 
 @media only screen and (min-width: 1024px) {
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
   header #lg_header {
     display: -webkit-box;
     display: -ms-flexbox;
