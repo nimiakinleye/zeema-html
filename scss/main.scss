@@ -545,9 +545,13 @@ header {
     padding: 30px;
 
     .rates {
-      display: flex;
       grid-column: 1/10;
       width: auto;
+      
+      .rate {
+        display: flex;
+        justify-self: start;
+      }
     }
 
     .more {

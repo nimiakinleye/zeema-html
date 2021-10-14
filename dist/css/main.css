@@ -606,13 +606,16 @@ header .button:hover {
     padding: 30px;
   }
   #rates .rates {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -ms-grid-column: 1;
     -ms-grid-column-span: 9;
     grid-column: 1/10;
     width: auto;
+  }
+  #rates .rates .rate {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-self: start;
   }
   #rates .more {
     -ms-grid-column: 10;
