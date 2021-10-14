@@ -344,6 +344,8 @@ header .button:hover {
 #benefits #benefits_cont .benefits .benefit {
   position: relative;
   margin: 10px auto;
+  border: solid 1px #fff;
+  border-radius: 10px;
 }
 
 #benefits #benefits_cont .benefits .benefit h3 {
